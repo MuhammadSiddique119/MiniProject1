@@ -45,34 +45,35 @@ class categoriespage extends StatelessWidget {
                     child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                    Text("Shop",style: TextStyle(color:Colors.white, fontSize: 50,fontWeight: FontWeight.w300),),
+                    Text("Shop",style: TextStyle(color:Colors.white, fontSize: 50,fontWeight: FontWeight.w300,letterSpacing:3),),
                     ],
                    ),
                   ),
+                  SizedBox(height:10),
                   Container(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Text("BY Category",style: TextStyle(color:Colors.white, fontSize: 50,fontWeight: FontWeight.bold),),
+                        Text("By Category",style: TextStyle(color:Colors.white, fontSize: 50,fontWeight: FontWeight.bold,letterSpacing:3),),
                       ],
                     ),
                   ),
-                  SizedBox(height:50),
+                  SizedBox(height:30),
                   Expanded(
                     child: ListView(
                       children: [
                         Categorytile(),
-                        SizedBox(height: 3),
+                        SizedBox(height:10),
                         Categorytile(),
-                        SizedBox(height: 3),
+                        SizedBox(height:10),
                         Categorytile(),
-                        SizedBox(height: 3),
+                        SizedBox(height:10),
                         Categorytile(),
-                        SizedBox(height: 3),
+                        SizedBox(height: 10),
                         Categorytile(),
-                        SizedBox(height: 3),
+                        SizedBox(height:10),
                         Categorytile(),
-                        SizedBox(height: 3),
+                        SizedBox(height: 10),
                       ],
                     )),
                  
