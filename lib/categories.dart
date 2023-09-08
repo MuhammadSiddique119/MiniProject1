@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:grocery_app/widgets/category_tile.dart';
 import 'package:grocery_app/widgets/custombottom.dart';
 
 class categoriespage extends StatelessWidget {
@@ -56,6 +57,25 @@ class categoriespage extends StatelessWidget {
                       ],
                     ),
                   ),
+                  SizedBox(height:50),
+                  Expanded(
+                    child: ListView(
+                      children: [
+                        Categorytile(),
+                        SizedBox(height: 3),
+                        Categorytile(),
+                        SizedBox(height: 3),
+                        Categorytile(),
+                        SizedBox(height: 3),
+                        Categorytile(),
+                        SizedBox(height: 3),
+                        Categorytile(),
+                        SizedBox(height: 3),
+                        Categorytile(),
+                        SizedBox(height: 3),
+                      ],
+                    )),
+                 
 
 
             ],
