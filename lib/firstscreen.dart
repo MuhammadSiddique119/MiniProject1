@@ -1,54 +1,51 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:grocery_app/groceryyhome1.dart';
 import 'package:grocery_app/widgets/custombutton.dart';
+
 class firstscreen extends StatelessWidget {
   const firstscreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor:Color.fromRGBO(56, 97, 201, 0.827),
-        body:PageView.builder(
-          itemBuilder: (context, index) {
-          return Container(
-                padding: EdgeInsets.all(50),
-                child:Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                 children:[
-                      Container(
-                        child: Text("Your Holiday Shopping Delivered to Screen one 🛍️ ",
-                        style: TextStyle(fontSize: 45,
-                        color:Colors.white)
-                        ),
-                        padding: EdgeInsets.only(bottom: 5), 
-                        ),
-                        Container(
-                          child: Text("There's something everyone to enjoy with sweeet shop.",
-                          style: TextStyle(fontSize: 25,
-                          color: Colors.grey),
-                          ),
-                          padding: EdgeInsets.only(bottom: 100),
-                          ),
-                        Center(
-                          child: Container(
-                              child: Icon(Icons.image,size: 200,color: Colors.blueGrey,),
-                              padding: const EdgeInsets.only(bottom: 90),
-                            ),
-                        ),
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width*0.9,
-                          child:custombutton(buttonText:'Get Started', onTap: () { },),
-                        ),
-                        
-                      ]
-                  ),
-                );
-          },
-          itemCount: 2,
-          scrollDirection: Axis.horizontal,
-         
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(56, 97, 201, 0.827),
+      body:Padding(
+        padding: const EdgeInsets.all(25.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            const SizedBox(height:25),
+            Text('Grocery kart',
+            style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold,color: Colors.cyanAccent),),
+            Padding(
+                padding: EdgeInsets.only(top: 10,bottom: 10,right: 10),
+                child:Image.asset('assets/images1/shopping-cart.png',)
+                ),
+                SizedBox(height:10),
+                //title
+                Text("Your Everyday Grocery Partner.🛍️",
+                style:TextStyle(fontSize:45,
+                color:Colors.white,height: 1)
+                ),
+                SizedBox(height:5),
+              //subtitle            
+              Text("There's something for everyone to enjoy with grocery kart.",
+              style: TextStyle(fontSize: 25,
+              color: Colors.grey,height: 1),
+              ),
+              SizedBox(height:40,),
+              custombutton(text:'Get Started',
+              onTap:(){
+                //go to groceryhome1
+                Navigator.push(context,MaterialPageRoute(builder:(context)=>groceryhome1()));
+              },)
+             
+          ],
         ),
-      ),
-    );
+      )
+      );
   }
 }

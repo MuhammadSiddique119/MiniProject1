@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_app/groceryyhome1.dart';
-import 'package:grocery_app/widgets/images.dart';
+import 'package:grocery_app/categories.dart';
+import 'package:grocery_app/firstscreen.dart';
 
 void main() {
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:images(),
+      home:categoriespage(),
     );
   }
 } 

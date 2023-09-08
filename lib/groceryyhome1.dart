@@ -1,4 +1,7 @@
 
+
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:grocery_app/widgets/custombottom.dart';
 import 'package:grocery_app/widgets/customsalecard.dart';
@@ -7,6 +10,7 @@ import 'package:grocery_app/widgets/itemstile.dart';
 
 class groceryhome1 extends StatelessWidget {
   const groceryhome1({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -72,14 +76,18 @@ class groceryhome1 extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                      SizedBox(width: 10,),
-                      customsalecard(),
+                      SizedBox(width: 25),
+                      customsalecard(
+                        text1: 'Get', text2: '10% OFF',text3: 'On First Order.',Color: Colors.cyan,
+                      ),
                        SizedBox(width: 10,),
-                      customsalecard(),
+                      customsalecard(
+                        text1: 'Get',text2: "20% OFF On",text3: "All Grocery Items.",Color: Colors.blueGrey,
+                      ),
                        SizedBox(width: 10,),
-                      customsalecard(),
-                       SizedBox(width: 10,),
-                      customsalecard(),
+                      customsalecard(
+                        text1:'Get' ,text2:'A Chance to Win' ,text3: 'Free Membership By Spending 100 Dollars.',Color:Colors.lightBlue,
+                      ),
                       ],
                     ),
                   ),

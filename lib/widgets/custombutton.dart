@@ -2,22 +2,29 @@
 import 'package:flutter/material.dart';
 
 class custombutton extends StatelessWidget {
-  final String buttonText;
-  final Function()? onTap;
-  const custombutton({super.key, required this.buttonText,required this.onTap});
+  final String text;
+  final void Function()? onTap;
+  const custombutton({super.key, required this.text, this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return  InkWell(
-      onTap: onTap,
+    return GestureDetector(
+      onTap:onTap,
       child: Container(
-        height: 70,
-      
-        decoration: ShapeDecoration(
-            color: Colors.white,
-          shape: ContinuousRectangleBorder(borderRadius: BorderRadius.circular(12))),
-       child:Center(child: Text(buttonText,style: TextStyle(fontSize: 22),)),
-         ),
+        decoration: BoxDecoration(
+          color: Colors.white,borderRadius: BorderRadius.circular(40)),
+          padding:EdgeInsets.all(20),
+         child:Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+           children: [
+             Text(text,style: TextStyle(color: Colors.black,fontSize: 25),),
+             SizedBox(width: 10,),
+             Icon(Icons.arrow_forward_ios_sharp,color: Colors.black),
+           ],
+           
+         )
+           ),
     );
+    
   }
 }

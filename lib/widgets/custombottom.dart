@@ -9,37 +9,33 @@ class BottomNavigation extends StatelessWidget {
       type: BottomNavigationBarType.fixed,
 
       iconSize: 30,
-     selectedItemColor: Colors.red,
+     selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
       // selectedFontSize: 14,
       // unselectedFontSize: 14,
       onTap: (value) {},
       items: [
         BottomNavigationBarItem(
-            label: '',
+            label: 'Home',
             icon:Icon(Icons.home)
             
             
             ),
         BottomNavigationBarItem(
-          label: '',
-         icon:Icon(Icons.woman)
+          label: 'Categories',
+         icon:Icon(Icons.add_box)
           
         ),
         BottomNavigationBarItem(
-            label: '',
-           icon:Icon(Icons.ring_volume)
+            label: 'Favorite',
+           icon:Icon(Icons.favorite_outlined)
             
             ),
         BottomNavigationBarItem(
-            label: '',
-            icon:Icon(Icons.pedal_bike)
+            label: 'More',
+            icon:Icon(Icons.more)
             
             ),
-        BottomNavigationBarItem(
-            label: '',
-           icon:Icon(Icons.access_alarm)
-          ),
       ],
     );
   }

@@ -5,7 +5,7 @@ class itemtiles extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(itemCount: 6,gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount:2),scrollDirection: Axis.horizontal,
+    return GridView.builder(itemCount:6,gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount:2,childAspectRatio: 1),scrollDirection: Axis.vertical,
                     itemBuilder:(context,index){
                       return Container(
                        
@@ -23,8 +23,8 @@ class itemtiles extends StatelessWidget {
                                   return Center(child: Icon(Icons.image_outlined,size:80,color: Colors.white38,));
                                 }
                               )),
-                              Text('srikant',style: TextStyle(fontSize: 20,color: Colors.white),),
-                              Text("suchi",style:TextStyle(fontSize:10,color: Colors.black),),
+                              Text('Vegetables',style: TextStyle(fontSize: 20,color: Colors.white),),
+                              Text("Fresh And Green",style:TextStyle(fontSize:10,color: Colors.black),),
                               SizedBox(height:1,),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
