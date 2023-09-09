@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:grocery_app/groceryyhome1.dart';
+import 'package:grocery_app/widgets/custombottom.dart';
 import 'package:grocery_app/widgets/custombutton.dart';
 
 class firstscreen extends StatelessWidget {
@@ -40,7 +41,7 @@ class firstscreen extends StatelessWidget {
               custombutton(text:'Get Started',
               onTap:(){
                 //go to groceryhome1
-                Navigator.push(context,MaterialPageRoute(builder:(context)=>groceryhome1()));
+                Navigator.push(context,MaterialPageRoute(builder:(context)=>BottomNavigation()));
               },)
              
           ],

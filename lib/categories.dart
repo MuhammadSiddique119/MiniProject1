@@ -12,7 +12,6 @@ class categoriespage extends StatelessWidget {
     return SafeArea(
       child:Scaffold(
         backgroundColor: Color.fromRGBO(56, 97, 201, 0.827),
-        bottomNavigationBar: BottomNavigation(),
         body: Padding(
           padding: EdgeInsets.only(left: 20,right: 20,top: 25),
           child: Column(

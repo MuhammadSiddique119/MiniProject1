@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/categories.dart';
 import 'package:grocery_app/firstscreen.dart';
+import 'package:grocery_app/widgets/custombottom.dart';
 
 void main() {
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:categoriespage(),
+      home:firstscreen(),
     );
   }
 } 
