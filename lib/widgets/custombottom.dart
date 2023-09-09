@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/categories.dart';
-import 'package:grocery_app/firstscreen.dart';
 import 'package:grocery_app/groceryyhome1.dart';
 
 class BottomNavigation extends StatefulWidget {

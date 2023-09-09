@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_app/categories.dart';
 import 'package:grocery_app/firstscreen.dart';
-import 'package:grocery_app/widgets/custombottom.dart';
 
 void main() {
 
