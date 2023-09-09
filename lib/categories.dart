@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:grocery_app/widgets/category_tile.dart';
-import 'package:grocery_app/widgets/custombottom.dart';
 
 class categoriespage extends StatelessWidget {
   const categoriespage({super.key});
