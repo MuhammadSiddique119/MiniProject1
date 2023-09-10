@@ -15,7 +15,7 @@ class groceryhome1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-     backgroundColor: Color.fromRGBO(56, 97, 201, 0.827),
+     backgroundColor: Color.fromRGBO(5, 52, 170, 0.824),
     
         body:  Padding(
             padding: EdgeInsets.only(left: 20,right: 20,top: 25),

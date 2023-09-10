@@ -22,7 +22,7 @@ class firstscreen extends StatelessWidget {
             style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold,color: Colors.cyanAccent),),
             Padding(
                 padding: EdgeInsets.only(top: 10,bottom: 10,right: 10),
-                child:Image.asset('assets/images1/shopping-cart.png',)
+                child:Image.asset('assets/images1/cart1.png')
                 ),
                 SizedBox(height:10),
                 //title
