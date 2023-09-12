@@ -3,40 +3,46 @@
 import 'package:flutter/material.dart';
 
 class Categorytile extends StatelessWidget {
-  const Categorytile({super.key});
+  final String Imaagepath;
+  final String Categoryname;
+  final String CategoryDescription;
+  final String Price; 
+
+  Categorytile({ required this.Imaagepath, 
+  required this.Categoryname, 
+  required this.CategoryDescription, 
+  required this.Price});
 
   @override
   Widget build(BuildContext context) {
     return  Container(
                      decoration:BoxDecoration(
-                      color: Colors.grey[400],
-                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.blue[500],
+                      borderRadius: BorderRadius.circular(30),
                      ),
                       child: Row(
                         children: [
                           //image of item
                           Padding(
-                            padding: const EdgeInsets.only(left:5),
-                            child: Image.asset('assets/images1/vegetable.png',height: 90,),
+                            padding: const EdgeInsets.only(left:10),
+                            child: Image.asset(Imaagepath,height: 100,),
                           ),
                           //name of Category
                         Padding(
-                          padding: const EdgeInsets.only(left:20),
+                          padding: const EdgeInsets.only(left:33,bottom:10),
                           child: Column(
                                 children: [
                                   SizedBox(height: 20,),
-                                  Text("Vegetables",style: TextStyle(color:Colors.black, fontSize: 50,fontWeight: FontWeight.w400,letterSpacing: 2),),
-                                  SizedBox(height:2),
-                                  Text("Fresh From Lush Green Farms",style: TextStyle(color:Colors.black, fontSize: 20,fontWeight: FontWeight.w600,letterSpacing:1),),
+                                  Text(Categoryname,style: TextStyle(color:Colors.black, fontSize: 50,fontWeight: FontWeight.w400,letterSpacing:1),),
+                                  SizedBox(height:2,width: 2,),
+                                  Text(CategoryDescription,style: TextStyle(color:Colors.black, fontSize: 20,fontWeight: FontWeight.w600,),),
                                   SizedBox(height: 10,),
                                   Text("Starting From",style: TextStyle(color:Colors.black, fontSize: 20,fontWeight: FontWeight.w500,letterSpacing:3),),
                                   SizedBox(height:5,),
-                                  Text("\$40/KG",style: TextStyle(color:Colors.black, fontSize: 20,fontWeight: FontWeight.normal,letterSpacing: 5),),
+                                  Text(Price,style: TextStyle(color:Colors.black, fontSize: 20,fontWeight: FontWeight.normal,letterSpacing:2),),
                                 ],
                               ),
                         ),
-                          
-                          //price of item
                           
                         ],
                       ),

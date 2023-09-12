@@ -18,12 +18,12 @@ class categoriespage extends StatelessWidget {
               Row(
                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Hey, Halal",style: TextStyle(color:Colors.white, fontSize: 25,fontWeight: FontWeight.bold),),
+                  Text("Hey, Muhammad Siddique",style: TextStyle(color:Colors.white, fontSize: 25,fontWeight: FontWeight.bold),),
                   //search icon
                   Container(
                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
                       child: Padding(
-                       padding: const EdgeInsets.only(left: 200),
+                       padding: const EdgeInsets.only(left:100),
                         child: Icon(Icons.search,
                         color: Colors.white
                         ),
@@ -60,17 +60,17 @@ class categoriespage extends StatelessWidget {
                   Expanded(
                     child: ListView(
                       children: [
-                        Categorytile(),
+                        Categorytile(Imaagepath: 'assets/images1/vegetable.png',Categoryname:'Vegetables',CategoryDescription: 'Fresh From Lush Green Farms.',Price:'\$10 per kg '),
                         SizedBox(height:10),
-                        Categorytile(),
+                        Categorytile(Imaagepath: 'assets/images1/fruits.png',Categoryname: 'Fruits',CategoryDescription:'100% Fresh And Organic Fruits.',Price:'\$10 per kg '),
                         SizedBox(height:10),
-                        Categorytile(),
+                        Categorytile(Imaagepath: 'assets/images1/meat.png',Categoryname: 'Meat',CategoryDescription:'100% Halal and Orangic Meat.',Price:'\$18 per kg '),
                         SizedBox(height:10),
-                        Categorytile(),
+                        Categorytile(Imaagepath: 'assets/images1/snack.png',Categoryname: 'Snacks',CategoryDescription:'Combination of Spicy and Salty.',Price:'\$10'),
                         SizedBox(height: 10),
-                        Categorytile(),
+                        Categorytile(Imaagepath: 'assets/images1/drinks.png',Categoryname: 'Drinks',CategoryDescription:'Soft Drinks,Juices and Manymore.',Price:'\$10'),
                         SizedBox(height:10),
-                        Categorytile(),
+                        Categorytile(Imaagepath: 'assets/images1/cleaning.png',Categoryname: 'Cleaning',CategoryDescription:'All house Cleaning Items Available.',Price:'\$15 '),
                         SizedBox(height: 10),
                       ],
                     )),

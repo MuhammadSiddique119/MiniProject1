@@ -24,7 +24,7 @@ class groceryhome1 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Hey, Halal",style: TextStyle(color:Colors.white, fontSize: 25,fontWeight: FontWeight.bold),),
+                      Text("Hey,Muhammad Siddique",style: TextStyle(color:Colors.white, fontSize: 25,fontWeight: FontWeight.bold),),
                       //nofitcation Icon 
                      Container(
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
