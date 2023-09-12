@@ -56,7 +56,7 @@ class categoriespage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height:30),
+                  SizedBox(height:60),
                   Expanded(
                     child: ListView(
                       children: [

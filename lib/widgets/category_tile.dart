@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
 
@@ -18,7 +18,7 @@ class Categorytile extends StatelessWidget {
     return  Container(
                      decoration:BoxDecoration(
                       color: Colors.blue[500],
-                      borderRadius: BorderRadius.circular(30),
+                      borderRadius: BorderRadius.circular(20),
                      ),
                       child: Row(
                         children: [
@@ -34,7 +34,7 @@ class Categorytile extends StatelessWidget {
                                 children: [
                                   SizedBox(height: 20,),
                                   Text(Categoryname,style: TextStyle(color:Colors.black, fontSize: 50,fontWeight: FontWeight.w400,letterSpacing:1),),
-                                  SizedBox(height:2,width: 2,),
+                                  SizedBox(height:10),
                                   Text(CategoryDescription,style: TextStyle(color:Colors.black, fontSize: 20,fontWeight: FontWeight.w600,),),
                                   SizedBox(height: 10,),
                                   Text("Starting From",style: TextStyle(color:Colors.black, fontSize: 20,fontWeight: FontWeight.w500,letterSpacing:3),),
