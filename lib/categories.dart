@@ -1,10 +1,28 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:grocery_app/widgets/category_tile.dart';
+import 'package:grocery_app/widgets/product_type.dart';
 
 class categoriespage extends StatelessWidget {
-  const categoriespage({super.key});
+
+  final List ProductType =[
+    ['Vegetables',true],
+    ['Fruits',false],
+    ['Meat',false],
+    ['Snacks',false],
+    ['Drinks',false],
+    ['Cleaning',false],
+  ];
+  void productTypeSelected (int index) {
+     setState(){
+      for(int i=0; i<ProductType.length; i++) {
+        ProductType[i][1]=false;
+      }
+      ProductType[index][1]=true;
+     }
+  }
+  categoriespage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +74,20 @@ class categoriespage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height:60),
+                  SizedBox(height:30),
+                  //slide
+                  Container(
+                   height: 50,
+                   child: ListView.builder(itemCount:ProductType.length,scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return Product_Type(productType: ProductType[index][0],
+                    isSelected:ProductType[index][1] ,
+                    OnTap:() {
+                      productTypeSelected(index);
+                    });
+                   },)
+                  ),
+                  SizedBox(height:20,),
                   Expanded(
                     child: ListView(
                       children: [
@@ -72,8 +103,9 @@ class categoriespage extends StatelessWidget {
                         SizedBox(height:10),
                         Categorytile(Imaagepath: 'assets/images1/cleaning.png',Categoryname: 'Cleaning',CategoryDescription:'All house Cleaning Items Available.',Price:'\$15 '),
                         SizedBox(height: 10),
-                      ],
-                    )),
+                     ],
+                    )
+                    ),
                  
 
 
